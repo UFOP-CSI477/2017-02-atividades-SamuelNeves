@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+<form action="validacao.html" method="post">
+
+    <label for="txtNome">Nome:</label>
+    <input type="text" name="txtNome"/><br>
+    <b>Endereço:</b>
+    <div id="divEnd">
+        <label for="txtRua">Rua:</label>
+        <input type="text" name="txtRua"/><br>
+
+        <label for="txtNumero">Número:</label>
+        <input type="text" name="txtNumero"/>
+
+        <label for="txtComplemento">Complemento:</label>
+        <input type="text" name="txtComplemento"/><br>
+
+        <label for="txtBairro">Bairro:</label>
+        <input type="text" name="txtBairro"/>
+
+        <label for="txtCidade">Cidade:</label>
+        <input type="text" name="txtCidade"/>
+
+        <label for="txtEstado">Estado:</label>
+        <input type="text" name="txtEstado"/><br>
+    </div>
+    <label for="txtCPF">CPF:</label>
+    <input type="text" name="txtCPF"/>
+
+
+    <label for="txtRG">RG:</label>
+    <input type="text" name="txtRG"/><br>
+
+    <b>Gênero:</b> <br>
+    <input type="radio" name="genero" value="F"/>Feminino <br>
+    <input type="radio" name="genero" value="M"/>Masculino <br>
+    <input type="radio" name="genero" value="N"/>Não Binário <br><br>
+
+
+    <label for="txtTelefone1">Telefone 1:</label>
+    <input type="text" name="txtTelefone1"/><br>
+
+
+    <input type="checkbox" name="chkWPtel1">Whats App<br>
+    <input type="checkbox" name="chkTelgramtel1">Telegram<br>
+
+    <br>
+    <label for="txtTelefone2">Telefone 2:</label>
+    <input type="text" name="txtTelefone2"/><br>
+
+    <input type="checkbox" name="chkWPtel2">Whats App<br>
+    <input type="checkbox" name="chkTelgramtel2">Telegram<br>
+    <br>
+
+    <label for="txtEmail">Email:</label>
+    <input type="text" name="txtEmail"/><br>
+
+    <label for="txtConfirmEmail">Confirmar Email:</label>
+    <input type="text" name="txtConfirmEmail"/><br>
+
+    <label for="txtSenha">Senha:</label>
+    <input type="password" name="txtSenha"/><br>
+
+    <label for="txtConfirmSenha">Confirmar Senha:</label>
+    <input type="password" name="txtConfirmSenha"/><br>
+
+    <b>Interesses:</b><br>
+    <input type="checkbox" name="chkWeb">Web<br>
+    <input type="checkbox" name="chkBD">Banco de dados<br>
+    <input type="checkbox" name="chkRedes">Redes<br>
+    <input type="checkbox" name="chkOtimizacao">Otimização<br>
+    <input type="checkbox" name="chkES">Engenharia de Software<br>
+
+
+    <input type="submit" formtarget="validacao.html" value="Cadastrar"/>
+    <input type="reset" value="Limpar"/>
+</form>
+
+<a href="index.html">Voltar</a>
+</body>
+</html>
