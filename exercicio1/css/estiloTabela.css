@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+}
+
+th{
+    background-color: lightgray;
+
+}
+table{
+    border: 1px solid black;
+}
