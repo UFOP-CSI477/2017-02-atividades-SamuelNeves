@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/footer.css" type="text/css">
+
+<body>
+<header class="page-header">
+    <div class="row">
+        <div class="bg-image" id="jumboid">
+            <img src="img/ufoplogo.jpg" width="100%" alt="Logo">
+        </div>
+    </div>
+</header>
+
+<div class="col-sm-2 sidebar">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <ul class="nav nav-pills  nav-stacked">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="matricula.html">Matricula</a></li>
+                <li><a href="listaDePresenca.html">Lista de Presença</a></li>
+                <li><a href="tabela.html">Tabela</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="col-sm-10">
+    <form action="sucessoMatricula.html" method="get">
+        <div class="form-group  col-md-6">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="mat">Matricula:</label>
+            <input type="text" class="form-control" id="mat">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="rua">Rua:</label>
+            <input type="text" class="form-control" id="rua">
+        </div>
+        <div class="form-group col-md-2">
+            <label for="numero">Nro:</label>
+            <input type="text" class="form-control" id="numero">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="comp">Complemento:</label>
+            <input type="text" class="form-control" id="comp">
+        </div>
+
+
+        <div class="form-group col-md-4">
+            <label for="cidades">Cidade:</label>
+            <select id="cidades" class="form-control">
+                <option>Joao Monlevade</option>
+                <option>Sao Paulo</option>
+                <option>Belo Horizonte</option>
+                <option>Rio de Janeiro</option>
+            </select></div>
+        <div class="form-group col-md-2">
+            <label for="estados">Estado:</label>
+            <select class="form-control" id="estados">
+                <option>MG</option>
+                <option>SP</option>
+                <option>SC</option>
+                <option>RJ</option>
+            </select>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="sexo">Sexo:</label>
+            <div id="sexo" class="radio">
+                <label><input type="radio" name="optradio">Masculino</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Feminino</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Outro</label>
+            </div>
+        </div>
+
+        <div class="form-group col-md-2">
+            <label for="rg">RG:</label>
+            <input type="text" class="form-control" style="width: 90%" id="rg">
+        </div>
+        <div class="form-group col-md-10">
+            <label for="cpf">CPF:</label>
+            <input type="text" class="form-control" style="width: 20%" id="cpf">
+        </div>
+        <div class="form-group col-md-4 ">
+            <label for="sangue">Tipo Sanguineo:</label>
+            <select class="form-control" id="sangue" style="width: 40%">
+                <option>A</option>
+                <option>B</option>
+                <option>AB</option>
+                <option>O</option>
+            </select></div>
+
+        <div class="form-group col-md-8">
+            <label for="rh">Fator RH:</label>
+            <div id="rh" class="radio">
+                <label><input type="radio" name="th">Positivo</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="th">Negativo</label>
+            </div>
+        </div>
+
+        <div class="form-group col-md-3">
+            <label for="tel">Telefone:</label>
+            <input type="text" class="form-control" style="width: 80%" id="tel">
+        </div>
+
+        <div class="form-group col-md-9">
+            <label for="cel">Celular:</label>
+            <input type="text" class="form-control" style="width: 40%" id="cel">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" style="width: 40%;" id="email">
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" style="width: 40%" class="form-control" id="senha">
+        </div>
+        <div class="form-group">
+            <label for="rsenha">Confirme a senha:</label>
+            <input type="password" style="width: 40%" class="form-control" id="rsenha">
+        </div>
+
+        <div id="acessos" class="form-group">
+            <label for="acessos">Acessos:</label>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Biblioteca</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Restaurante</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Clube</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" value="">Campo</label>
+            </div>
+        </div>
+
+        <div class="container">
+            <button type="submit" class="btn btn-success" formtarget="sucessoCadastro.html">Enviar</button>
+            <button type="reset" class="btn btn-danger">Limpar</button>
+        </div>
+    </form>
+</div>
+
+<footer class="modal-footer">
+    <p>UFOP. Samuel Antônio das Neves.Matricula: 13.1.8422</p>
+    <p><a href="mailto:samuel.neves@live..com">
+        samuel.neves@live.com</a>.</p>
+</footer>
+
+</body>
+</html>

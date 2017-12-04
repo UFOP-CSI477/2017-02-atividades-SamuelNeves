@@ -1,0 +1,13 @@
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #F1F2F1;
+}
+
+.cabecalho{
+    background-color: #D2C74F;
+    color: white;
+}
+.linhaDestacada{
+    background-color: #5D97E2;
+    color: white;
+    font-weight: bold;
+}
