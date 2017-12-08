@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduçao ao JS</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script type="text/javascript" src="./js/calculoIMC.js"></script>
+</head>
+
+<body>
+
+
+<!--<p id="data">Data</p>-->
+<!--<p id="nome">Nome</p>-->
+<div class="container">
+
+    <div class="jumbotron text-center">
+        <h2>Calcula IMC</h2>
+    </div>
+    <div class="container">
+        <form name="dados" class="form-group form">
+            <div id="grupoV1">
+                <label>
+                    Insira seu peso(Kg):
+                    <input name="weight" type="text" class="form-control">
+                </label>
+            </div>
+            <div class=" alert alert-danger" id="alertaV1" style="display: none">
+                Informe um peso válido.
+            </div>
+
+            <div id="grupoV2">
+                <label>
+                    Insira sua altura(m):
+                    <input name="height" type="text" class="form-control">
+                </label>
+            </div>
+            <div class=" alert alert-danger" id="alertaV2" style="display: none">
+                Insira uma altura válida.
+            </div>
+            <div id="grupoV3">
+                <label>
+                    IMC:
+                    <input name="result" type="text" class=" form-control">
+                </label>
+            </div>
+            <div class=" alert alert-warning" id="alertaV3" style="display: none">
+                <p id="tipoIMC"></p>
+                <p id="pesoIdeal"></p>
+            </div>
+            <button type="button" onclick="somaUsandoInputs()" class="btn btn-primary">Calcular IMC</button>
+            <div id="idealHeight"></div>
+        </form>
+    </div>
+    <!--<button type="button" onclick="somaUsandoInputs()">Exibir</button>-->
+</body>
+</html>
